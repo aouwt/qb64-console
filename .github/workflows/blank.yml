@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 0"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Install dependencies
+      - run: sudo apt update && sudo apt install libglu1-mesa-dev libncurses-dev
+      
+      - name: update.sh
+      - run: .ci/update.sh
