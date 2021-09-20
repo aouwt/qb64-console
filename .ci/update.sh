@@ -3,7 +3,7 @@
 rm -rf qb64
 
 # Clone the QB64 repository
-git clone https://github.com/qb64team/qb64.git --depth=1
+git clone https://github.com/qb64team/qb64.git --depth=1 --branch=${{ steps.extract_branch.outputs.branch }}
 cd qb64
 
 # Get rid of GUI components
