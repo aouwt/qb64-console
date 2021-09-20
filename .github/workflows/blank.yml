@@ -12,6 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+
       - name: Install dependencies
         run: sudo apt update && sudo apt install libglu1-mesa-dev libncurses-dev
       
@@ -22,3 +27,4 @@ jobs:
         uses: ad-m/github-push-action@19caa5c351f47734055690f7d01aaaef2f9114d5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.extract_branch.outputs.branch }}
