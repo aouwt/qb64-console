@@ -20,11 +20,30 @@ jobs:
       - name: Install dependencies
         run: sudo apt update && sudo apt install libglu1-mesa-dev libncurses-dev
       
-      - name: update.sh
-        run: .ci/update.sh
+      - name: Clone QB64
+        run: git clone https://github.com/QB64Team/QB64 --depth=1 --branch=${{ steps.extract_branch.outputs.branch }}; cd QB64
+        
+      - name: Patch files
+        run: |
+          # QB64 errors (for some reason) when you include an empty file when compiling via CLI
+          echo "" > ./source/ide/ide_methods.bas
+          echo "" > ./source/ide/ide_global.bas
+          
+      - name: Bootstrap & compile
+        run: |
+          ./.ci/bootstrap.sh lnx
+          ./.ci/compile.sh
+        
+      - name: Prepare
+        run: |
+          rm -rf ./.*
+          cd ..
+          cp -rf ./qb64/* ./
+          rm -rf ./qb64
       
       - name: Push
         uses: ad-m/github-push-action@19caa5c351f47734055690f7d01aaaef2f9114d5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ steps.extract_branch.outputs.branch }}
+
