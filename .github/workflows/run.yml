@@ -28,7 +28,7 @@ jobs:
           echo "" > ./source/ide/ide_global.bas
           ./.ci/bootstrap.sh lnx
           ./.ci/compile.sh
-          rm -rf ./.github ./.ci ./.git
+          rm -rf ./.github ./.ci ./.git ./qb64
           cd ..
           cp -rf ./qb64/* ./
           rm -rf ./qb64
