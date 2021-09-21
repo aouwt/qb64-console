@@ -28,11 +28,10 @@ jobs:
           echo "" > ./source/ide/ide_global.bas
           ./.ci/bootstrap.sh lnx
           ./.ci/compile.sh
-          rm -rf ./.*
+          rm -rf ./.github ./.ci ./.git
           cd ..
           cp -rf ./qb64/* ./
           rm -rf ./qb64
-          exit 0
       
       - name: Push
         uses: ad-m/github-push-action@19caa5c351f47734055690f7d01aaaef2f9114d5
