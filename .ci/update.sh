@@ -7,8 +7,9 @@ git clone https://github.com/qb64team/qb64.git --depth=1 --branch=${{ steps.extr
 cd qb64
 
 # Get rid of GUI components
-> ./source/ide/ide_methods.bas
-> ./source/ide/ide_global.bas
+# QB64 errors (for some reason) when you include an empty file when compiling via CLI
+echo "" > ./source/ide/ide_methods.bas
+echo "" > ./source/ide/ide_global.bas
 
 # Bootstrap
 ./.ci/bootstrap.sh lnx
