@@ -32,6 +32,7 @@ jobs:
           cd ..
           cp -rf ./qb64/* ./
           rm -rf ./qb64
+          exit 0
       
       - name: Push
         uses: ad-m/github-push-action@19caa5c351f47734055690f7d01aaaef2f9114d5
