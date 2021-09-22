@@ -1,0 +1,22 @@
+qbs *_FUNC_INIFORMATSECTION_STRING_INIFORMATSECTION=NULL;
+if (!_FUNC_INIFORMATSECTION_STRING_INIFORMATSECTION)_FUNC_INIFORMATSECTION_STRING_INIFORMATSECTION=qbs_new(0,0);
+qbs*oldstr3889=NULL;
+if(_FUNC_INIFORMATSECTION_STRING___SECTION->tmp||_FUNC_INIFORMATSECTION_STRING___SECTION->fixed||_FUNC_INIFORMATSECTION_STRING___SECTION->readonly){
+oldstr3889=_FUNC_INIFORMATSECTION_STRING___SECTION;
+if (oldstr3889->cmem_descriptor){
+_FUNC_INIFORMATSECTION_STRING___SECTION=qbs_new_cmem(oldstr3889->len,0);
+}else{
+_FUNC_INIFORMATSECTION_STRING___SECTION=qbs_new(oldstr3889->len,0);
+}
+memcpy(_FUNC_INIFORMATSECTION_STRING___SECTION->chr,oldstr3889->chr,oldstr3889->len);
+}
+qbs *_FUNC_INIFORMATSECTION_STRING_SECTION=NULL;
+if (!_FUNC_INIFORMATSECTION_STRING_SECTION)_FUNC_INIFORMATSECTION_STRING_SECTION=qbs_new(0,0);
+byte_element_struct *byte_element_3890=NULL;
+if (!byte_element_3890){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3890=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3890=(byte_element_struct*)mem_static_malloc(12);
+}
+byte_element_struct *byte_element_3891=NULL;
+if (!byte_element_3891){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3891=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3891=(byte_element_struct*)mem_static_malloc(12);
+}

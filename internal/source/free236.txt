@@ -1,0 +1,6 @@
+if(oldstr6250){
+if(oldstr6250->fixed)qbs_set(oldstr6250,_FUNC_ISNUMBER_STRING___A);
+qbs_free(_FUNC_ISNUMBER_STRING___A);
+}
+qbs_free(_FUNC_ISNUMBER_STRING_A);
+qbs_free(_FUNC_ISNUMBER_STRING_SYMBOL);
