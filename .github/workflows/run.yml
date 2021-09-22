@@ -23,6 +23,9 @@ jobs:
       - name: Clone, patch, bootstrap and compile QB64
         run: ./.ci/gen.sh "${{ steps.extract_branch.outputs.branch }}"
       
+      - name: Commit
+        run: git commit -am "Update to latest QB64 repository state"
+        
       - name: Push
         uses: ad-m/github-push-action@19caa5c351f47734055690f7d01aaaef2f9114d5
         with:
