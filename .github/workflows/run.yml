@@ -26,6 +26,7 @@ jobs:
       - name: Commit
         run: |
           git config --global user.name "Beep R. Boop"
+          git add .
           git commit -am "Update to latest QB64 repository state"
         
       - name: Push
