@@ -6,6 +6,9 @@ echo "" > ./source/ide/ide_global.bas
 ./.ci/bootstrap.sh lnx
 ./.ci/compile.sh
 rm -rf ./.github ./.ci ./.git ./qb64
+for F in .; do
+ cp -rf "$F" "../$F"
+done
+
 cd ..
-cp -rf ./qb64/* ./
 rm -rf ./qb64
