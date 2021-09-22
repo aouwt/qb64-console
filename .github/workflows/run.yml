@@ -21,7 +21,7 @@ jobs:
         run: sudo apt update && sudo apt install libglu1-mesa-dev libncurses-dev
       
       - name: Clone, patch, bootstrap and compile QB64
-        run: ./.ci/gen.sh
+        run: ./.ci/gen.sh "${{ steps.extract_branch.outputs.branch }}"
       
       - name: Push
         uses: ad-m/github-push-action@19caa5c351f47734055690f7d01aaaef2f9114d5
