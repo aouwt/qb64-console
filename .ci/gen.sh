@@ -5,7 +5,7 @@ echo "" > ./source/ide/ide_methods.bas
 echo "" > ./source/ide/ide_global.bas
 ./.ci/bootstrap.sh lnx
 ./.ci/compile.sh
-rm -rf ./.github ./.ci ./.git ./qb64
+rm -rf ./.github ./.ci ./.git ./QB64
 for F in .; do
  cp -rf "$F" "../$F"
 done
