@@ -1,4 +1,0 @@
-if(oldstr3522){
-if(oldstr3522->fixed)qbs_set(oldstr3522,_SUB_LINEINPUT3LOAD_STRING_F);
-qbs_free(_SUB_LINEINPUT3LOAD_STRING_F);
-}

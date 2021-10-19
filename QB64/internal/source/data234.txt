@@ -1,4 +1,0 @@
-int64 fornext_value6324;
-int64 fornext_finalvalue6324;
-int64 fornext_step6324;
-uint8 fornext_step_negative6324;
