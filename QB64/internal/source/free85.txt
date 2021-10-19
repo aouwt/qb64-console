@@ -1,5 +1,0 @@
-if(oldstr3674){
-if(oldstr3674->fixed)qbs_set(oldstr3674,_FUNC_HASHFINDREV_STRING_A);
-qbs_free(_FUNC_HASHFINDREV_STRING_A);
-}
-qbs_free(_FUNC_HASHFINDREV_STRING_UA);

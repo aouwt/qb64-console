@@ -1,7 +1,0 @@
-if(oldstr3809){
-if(oldstr3809->fixed)qbs_set(oldstr3809,_FUNC_SCASE2_STRING_T);
-qbs_free(_FUNC_SCASE2_STRING_T);
-}
-qbs_free(_FUNC_SCASE2_STRING_SEPARATOR);
-qbs_free(_FUNC_SCASE2_STRING_TEMP);
-qbs_free(_FUNC_SCASE2_STRING_S);
