@@ -1,0 +1,10 @@
+qbs*oldstr3712=NULL;
+if(_SUB_GIVE_ERROR_STRING_A->tmp||_SUB_GIVE_ERROR_STRING_A->fixed||_SUB_GIVE_ERROR_STRING_A->readonly){
+oldstr3712=_SUB_GIVE_ERROR_STRING_A;
+if (oldstr3712->cmem_descriptor){
+_SUB_GIVE_ERROR_STRING_A=qbs_new_cmem(oldstr3712->len,0);
+}else{
+_SUB_GIVE_ERROR_STRING_A=qbs_new(oldstr3712->len,0);
+}
+memcpy(_SUB_GIVE_ERROR_STRING_A->chr,oldstr3712->chr,oldstr3712->len);
+}

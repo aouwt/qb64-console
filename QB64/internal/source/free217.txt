@@ -1,0 +1,4 @@
+if(oldstr6192){
+if(oldstr6192->fixed)qbs_set(oldstr6192,_FUNC_REMOVEDOUBLESLASHES_STRING_F);
+qbs_free(_FUNC_REMOVEDOUBLESLASHES_STRING_F);
+}
