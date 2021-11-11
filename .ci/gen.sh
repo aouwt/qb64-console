@@ -14,4 +14,4 @@ for F in .; do
 done
 
 cd ..
-rm -rf ./QB64
+# rm -rf ./QB64 #debug
