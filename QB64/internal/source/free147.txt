@@ -1,4 +1,0 @@
-if(oldstr5235){
-if(oldstr5235->fixed)qbs_set(oldstr5235,_SUB_FINDQUOTECOMMENT_STRING_TEXT);
-qbs_free(_SUB_FINDQUOTECOMMENT_STRING_TEXT);
-}

@@ -1,8 +1,0 @@
-if(oldstr3784){
-if(oldstr3784->fixed)qbs_set(oldstr3784,_SUB_COPY_FULL_UDT_STRING_DST);
-qbs_free(_SUB_COPY_FULL_UDT_STRING_DST);
-}
-if(oldstr3785){
-if(oldstr3785->fixed)qbs_set(oldstr3785,_SUB_COPY_FULL_UDT_STRING_SRC);
-qbs_free(_SUB_COPY_FULL_UDT_STRING_SRC);
-}

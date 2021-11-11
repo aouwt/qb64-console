@@ -1,2 +1,0 @@
-int32 pass3280;
-int8 pass3281;

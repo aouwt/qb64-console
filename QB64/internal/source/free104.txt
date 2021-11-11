@@ -1,4 +1,0 @@
-if(oldstr3767){
-if(oldstr3767->fixed)qbs_set(oldstr3767,_SUB_CLEAR_UDT_WITH_VARSTRINGS_STRING_N);
-qbs_free(_SUB_CLEAR_UDT_WITH_VARSTRINGS_STRING_N);
-}
