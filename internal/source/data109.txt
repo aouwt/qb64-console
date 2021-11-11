@@ -1,22 +1,22 @@
-qbs*oldstr3805=NULL;
+qbs*oldstr3800=NULL;
 if(_SUB_MANAGEVARIABLELIST_STRING___NAME->tmp||_SUB_MANAGEVARIABLELIST_STRING___NAME->fixed||_SUB_MANAGEVARIABLELIST_STRING___NAME->readonly){
-oldstr3805=_SUB_MANAGEVARIABLELIST_STRING___NAME;
-if (oldstr3805->cmem_descriptor){
-_SUB_MANAGEVARIABLELIST_STRING___NAME=qbs_new_cmem(oldstr3805->len,0);
+oldstr3800=_SUB_MANAGEVARIABLELIST_STRING___NAME;
+if (oldstr3800->cmem_descriptor){
+_SUB_MANAGEVARIABLELIST_STRING___NAME=qbs_new_cmem(oldstr3800->len,0);
 }else{
-_SUB_MANAGEVARIABLELIST_STRING___NAME=qbs_new(oldstr3805->len,0);
+_SUB_MANAGEVARIABLELIST_STRING___NAME=qbs_new(oldstr3800->len,0);
 }
-memcpy(_SUB_MANAGEVARIABLELIST_STRING___NAME->chr,oldstr3805->chr,oldstr3805->len);
+memcpy(_SUB_MANAGEVARIABLELIST_STRING___NAME->chr,oldstr3800->chr,oldstr3800->len);
 }
-qbs*oldstr3806=NULL;
+qbs*oldstr3801=NULL;
 if(_SUB_MANAGEVARIABLELIST_STRING___CNAME->tmp||_SUB_MANAGEVARIABLELIST_STRING___CNAME->fixed||_SUB_MANAGEVARIABLELIST_STRING___CNAME->readonly){
-oldstr3806=_SUB_MANAGEVARIABLELIST_STRING___CNAME;
-if (oldstr3806->cmem_descriptor){
-_SUB_MANAGEVARIABLELIST_STRING___CNAME=qbs_new_cmem(oldstr3806->len,0);
+oldstr3801=_SUB_MANAGEVARIABLELIST_STRING___CNAME;
+if (oldstr3801->cmem_descriptor){
+_SUB_MANAGEVARIABLELIST_STRING___CNAME=qbs_new_cmem(oldstr3801->len,0);
 }else{
-_SUB_MANAGEVARIABLELIST_STRING___CNAME=qbs_new(oldstr3806->len,0);
+_SUB_MANAGEVARIABLELIST_STRING___CNAME=qbs_new(oldstr3801->len,0);
 }
-memcpy(_SUB_MANAGEVARIABLELIST_STRING___CNAME->chr,oldstr3806->chr,oldstr3806->len);
+memcpy(_SUB_MANAGEVARIABLELIST_STRING___CNAME->chr,oldstr3801->chr,oldstr3801->len);
 }
 int32 *_SUB_MANAGEVARIABLELIST_LONG_FINDITEM=NULL;
 if(_SUB_MANAGEVARIABLELIST_LONG_FINDITEM==NULL){
@@ -39,43 +39,45 @@ qbs *_SUB_MANAGEVARIABLELIST_STRING_NAME=NULL;
 if (!_SUB_MANAGEVARIABLELIST_STRING_NAME)_SUB_MANAGEVARIABLELIST_STRING_NAME=qbs_new(0,0);
 qbs *_SUB_MANAGEVARIABLELIST_STRING_TEMP=NULL;
 if (!_SUB_MANAGEVARIABLELIST_STRING_TEMP)_SUB_MANAGEVARIABLELIST_STRING_TEMP=qbs_new(0,0);
-byte_element_struct *byte_element_3807=NULL;
-if (!byte_element_3807){
-if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3807=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3807=(byte_element_struct*)mem_static_malloc(12);
+byte_element_struct *byte_element_3802=NULL;
+if (!byte_element_3802){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3802=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3802=(byte_element_struct*)mem_static_malloc(12);
 }
 int32 *_SUB_MANAGEVARIABLELIST_LONG_FOUND=NULL;
 if(_SUB_MANAGEVARIABLELIST_LONG_FOUND==NULL){
 _SUB_MANAGEVARIABLELIST_LONG_FOUND=(int32*)mem_static_malloc(4);
 *_SUB_MANAGEVARIABLELIST_LONG_FOUND=0;
 }
-int64 fornext_value3809;
-int64 fornext_finalvalue3809;
-int64 fornext_step3809;
-uint8 fornext_step_negative3809;
+int64 fornext_value3804;
+int64 fornext_finalvalue3804;
+int64 fornext_step3804;
+uint8 fornext_step_negative3804;
 qbs *_SUB_MANAGEVARIABLELIST_STRING_THISINCNAME=NULL;
 if (!_SUB_MANAGEVARIABLELIST_STRING_THISINCNAME)_SUB_MANAGEVARIABLELIST_STRING_THISINCNAME=qbs_new(0,0);
-byte_element_struct *byte_element_3811=NULL;
-if (!byte_element_3811){
-if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3811=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3811=(byte_element_struct*)mem_static_malloc(12);
+byte_element_struct *byte_element_3806=NULL;
+if (!byte_element_3806){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3806=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3806=(byte_element_struct*)mem_static_malloc(12);
 }
 int32 *_SUB_MANAGEVARIABLELIST_LONG_X=NULL;
 if(_SUB_MANAGEVARIABLELIST_LONG_X==NULL){
 _SUB_MANAGEVARIABLELIST_LONG_X=(int32*)mem_static_malloc(4);
 *_SUB_MANAGEVARIABLELIST_LONG_X=0;
 }
-byte_element_struct *byte_element_3813=NULL;
-if (!byte_element_3813){
-if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3813=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3813=(byte_element_struct*)mem_static_malloc(12);
+byte_element_struct *byte_element_3808=NULL;
+if (!byte_element_3808){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3808=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3808=(byte_element_struct*)mem_static_malloc(12);
 }
-byte_element_struct *byte_element_3814=NULL;
-if (!byte_element_3814){
-if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3814=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3814=(byte_element_struct*)mem_static_malloc(12);
+byte_element_struct *byte_element_3809=NULL;
+if (!byte_element_3809){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3809=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3809=(byte_element_struct*)mem_static_malloc(12);
 }
-byte_element_struct *byte_element_3815=NULL;
-if (!byte_element_3815){
-if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3815=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3815=(byte_element_struct*)mem_static_malloc(12);
+byte_element_struct *byte_element_3810=NULL;
+if (!byte_element_3810){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3810=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3810=(byte_element_struct*)mem_static_malloc(12);
 }
-byte_element_struct *byte_element_3816=NULL;
-if (!byte_element_3816){
-if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3816=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3816=(byte_element_struct*)mem_static_malloc(12);
+qbs *_SUB_MANAGEVARIABLELIST_STRING_BACKUPVARIABLEWATCHLIST=NULL;
+if (!_SUB_MANAGEVARIABLELIST_STRING_BACKUPVARIABLEWATCHLIST)_SUB_MANAGEVARIABLELIST_STRING_BACKUPVARIABLEWATCHLIST=qbs_new(0,0);
+byte_element_struct *byte_element_3811=NULL;
+if (!byte_element_3811){
+if ((mem_static_pointer+=12)<mem_static_limit) byte_element_3811=(byte_element_struct*)(mem_static_pointer-12); else byte_element_3811=(byte_element_struct*)mem_static_malloc(12);
 }
